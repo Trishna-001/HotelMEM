@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Opal Palace</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href='https://ardyanatypes.com/product/zitter-decorative-serif' rel='stylesheet'>
+        <link rel="stylesheet" href="menu_files/mbcsmbmcp.css" type="text/css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        
+    </head>
+    <body>
+        <body>
+            <!-- Main Desktop Menu -->
+            <center>
+                <div id="head-1">
+                    <div id="sub-head">
+                        <div id="menu">
+                            <div id="mbmcpebul_wrapper">
+                                <ul id="mbmcpebul_table" class="mbmcpebul_menulist desktop-menu">
+                                    <div id="menu-1">
+                                        <!-- Left Menu -->
+                                        <div class="menu-items">
+                                            <li><div class="buttonbg" data-aos="fade-down"><a href="index.php">Home</a></div></li>
+                                            <li><div class="buttonbg" data-aos="fade-down"><a href="resturent.php">Restaurant</a></div></li>
+                                        </div>
+            
+                                        <!-- Center Logo -->
+                                        <div id="logo" data-aos="fade-up">
+                                            <a href="index.php">
+                                                <img src="images/MEM LOGO BLACK BRONZE.JPG" alt="Logo">
+                                            </a>
+                                        </div>
+            
+                                        <!-- Right Menu -->
+                                        <div class="menu-items">
+                                            <li><div class="buttonbg" data-aos="fade-down"><a href="index.php">Home</a></div></li>
+                                            <li><div class="buttonbg" data-aos="fade-down"><a href="resturent.php">Restaurant</a></div></li>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+            <!-- <div id="first-part">
+                <div id="page-header">
+                <h1 class="entry-title">Restaurant</h1>
+                </div>
+            </div> -->
+            <div class="total_upper_home">
+                <center>
+                    <div id="total_inner">
+                        <div class="slider">
+                            <img src="images/slide-1.jpg" style="width:100%">
+                        <div class="text-overlay">
+                            <h2>Your Heading</h2>
+                            <p>Your description text here.</p>
+                            <a href="contact.php" class="btn">Contact</a>
+
+                        </div>
+                    </div>
+                    </div>
+                </center>
+            </div>  
+            </center>
+        </div>
+    </body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript" src="menu_files/mbjsmbmcp.js"></script>
+    <script>
+        AOS.init({
+            duration: 1600,
+        })
+        window.addEventListener("scroll", function() {
+            let logo = document.getElementById("logo");
+
+            if (window.scrollY > 50) { 
+                logo.classList.add("scrolled-logo"); // Add zoom-in-down effect
+            } else {
+                logo.classList.remove("scrolled-logo"); // Restore original
+            }
+        });
+        function toggleSidebar() {
+            let sidebar = document.getElementById("sidebar");
+            let overlay = document.getElementById("overlay");
+
+            sidebar.classList.toggle("active"); // Open/Close sidebar
+            overlay.classList.toggle("active"); // Show/Hide overlay
+        }
+    </script>
+</html>

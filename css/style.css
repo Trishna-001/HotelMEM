@@ -13,10 +13,47 @@ body {
     display: table;
     
 }
-#menu-1 , #menu-2  {
-    width: 33.33%;
-    display: table-cell;
-    vertical-align: middle;
+
+/* Make the menu flexbox */
+#menu-1 {
+    display: flex;
+    justify-content: space-between; /* Distributes menu items & logo */
+    align-items: center; /* Centers items vertically */
+    width: 100%;
+    padding: 10px 20px;
+}
+
+/* Style for the menu items */
+.menu-items {
+    display: flex;
+    gap: 20px; /* Space between menu items */
+}
+
+/* Ensures menu items are vertically centered */
+.menu-items li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for buttons */
+.buttonbg a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    padding: 10px 15px;
+}
+
+/* Center logo */
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img {
+    height: 80px; /* Adjust logo height */
 }
 
 div#logo {
@@ -39,9 +76,11 @@ li.topitem #logo {
     animation: zoomInDown 0.5s ease-in-out;
     transform: scale(1.1);
 }
-
-
-
+/*----------------------------------*/
+#mbmcpebul_table li a{
+    border-bottom: 3px solid transparent;
+}
+/*----------------------------------*/
 #first-part {
     width: 100%;
     display: table;
