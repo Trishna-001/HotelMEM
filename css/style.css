@@ -102,39 +102,391 @@ h1.entry-title{
 }
 /*************slide******************/
 .slider {
-    position: relative;
-    display: inline-block;
-}
-
-.slider img {
     width: 100%;
-    height: auto;
+    background-color: #3b3328;
+    padding-top: 170px;
 }
 
-.text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px;
+
+
+.heading-title{
+    font-family: "Zitter", Sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    word-spacing: 30px;
+    color: #dad9cd;
+    margin: 0px;
 }
 
-.btn {
-    display: inline-block;
-    background: #ff6600;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
+.heading-title-2{
+    font-family: "Zitter", Sans-serif;
+    font-size: 90px;
+    font-weight: 400;
+    word-spacing: 30px;
+    color: #DAD9CD;
+}
+span.elementor-icon-list-text {
+    font-family: "Century Gothic", Sans-serif;
     font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+}
+ul.elementor-icon-list-items.elementor-inline-items {
+    color:#DAD9CD;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li.elementor-icon-list-item.elementor-inline-item {
+    margin-right: calc(50px / 2);
+    margin-left: calc(50px / 2);
+}
+
+.elementor-heading-title {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 2.5rem;
+}
+h1.elementor-heading-title.elementor-size-default {
+    color: #DAD9CD;
+}
+.elementor-widget-container{
+    margin: 50px 0px 0px 0px;
+    text-align: center;
+    font-family: "Century Gothic", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #DAD9CD;
+}
+h2.heading-title , h1.heading-title-2.aos-init.aos-animate {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the button */
+.button-wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Button styles */
+.custom-button {
+    display: inline-block;
+    background-color: #B89348; /* Dark brown (same as your theme) */
+    color: white;
+    font-size: 18px;
+    font-family: "Century Gothic", Sans-serif;
+    padding: 12px 24px;
+    text-decoration: none;
     border-radius: 5px;
-    margin-top: 10px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.5px;
+    word-spacing: 0px;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+/* Shrink animation on hover */
+.custom-button:hover {
+    transform: scale(0.95);
+    
+}
+
+
+/********************home**************************/
+
+.section {
+    
+    background-color: #d8cec2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    min-height: 400px;
+}
+
+.content {
+    width: 50%;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: fadeInLeft 1s ease-out forwards;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.content button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #5a4d40;
+    color: white;
+    border: none;
+    cursor: pointer;
     transition: 0.3s;
 }
 
-.btn:hover {
-    background: #cc5500;
+.content button:hover {
+    background-color: #453a30;
 }
+
+.image-container {
+    width: 45%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#right-side-img{
+    position: relative;
+    top: 104px;
+    right: -507px;
+    width: 200px;
+}
+#right-side-img img{
+    width: 100%;
+}
+/* First section */
+.section-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    min-height: 300px;
+    
+}
+#whole-section{
+    background-color:#3b3328;
+}
+
+.left h1 {
+    font-family: "Zitter", Sans-serif;
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 1.3em;
+    color: #cdcac4;
+}
+
+
+.left, .right {
+    width: 45%;
+}
+
+.left h1 {
+    font-size: 2.5rem;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: fadeInLeft 1s ease-out forwards;
+}
+
+.right {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: fadeInRight 1s ease-out forwards;
+}
+
+.right p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.right button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #5a4d40;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.right button:hover {
+    background-color: #453a30;
+}
+
+/* Fade-in animations */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Spinning Image */
+.spinning-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    position: relative;
+}
+
+.spinning-container img {
+    width: 150px;
+    height: auto;
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Below the spinning image */
+.heading-below {
+    font-size: 2rem;
+    margin: 20px 0;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+/* Two images appearing from left and right */
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.image-row img {
+    width: 40%;
+    height: auto;
+    opacity: 0;
+}
+
+.left-img {
+    transform: translateX(-100%);
+    animation: slideInLeft 1.5s ease-out forwards;
+}
+
+.right-img {
+    transform: translateX(100%);
+    animation: slideInRight 1.5s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Fade-in effect for heading */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************media***************************/
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content, .image-container {
+        width: 100%;
+    }
+
+    .content {
+        margin-bottom: 20px;
+    }
+    .section-1{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .right {
+        margin-top: 20px;
+    }
+
+    .image-row {
+        flex-direction: column;
+    }
+
+    .image-row img {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
+
