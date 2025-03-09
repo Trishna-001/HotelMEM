@@ -67,10 +67,10 @@
     <center>
         <div id="total_inner">
             <div class="slider">
-                <h2 class="heading-title" data-aos="fade-in" data-aos-duration="3000">WELCOME<br>TO</h2>
-                <h1 class="heading-title-2" data-aos="fade-in" data-aos-duration="3000">Hotel MEM</h1>
+                <h2 class="heading-title" data-aos="fade-in">WELCOME<br>TO</h2>
+                <h1 class="heading-title-2" data-aos="fade-in">Hotel MEM</h1>
             <div class="elementor-widget-container">
-                <ul class="elementor-icon-list-items elementor-inline-items" data-aos="fade-in" data-aos-duration="3000">
+                <ul class="elementor-icon-list-items elementor-inline-items" data-aos="fade-in">
                     <li class="elementor-icon-list-item elementor-inline-item" style="list-style: none;" >
                         <span class="elementor-icon-list-text">Banquet Hall</span>
                     </li>
@@ -85,9 +85,9 @@
                     </li>
                 </ul>
             </div> 
-            <h1 class="elementor-heading-title elementor-size-default" data-aos="fade-in" data-aos-duration="3000">abcd conference and banquet centre</h1> 
+            <h1 class="elementor-heading-title elementor-size-default">abcd conference and banquet centre</h1> 
             <div class="elementor-widget-container" >
-                <p data-aos="fade-in" data-aos-duration="3000">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining </p>				
+                <p data-aos="fade-in">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining </p>				
             </div>  
             <div class="button-wrapper">
                 <a class="custom-button" href="#">
@@ -96,7 +96,7 @@
             </div> 
             
             <div id="right-side-img">
-                <img src="images/right-side-img.png" alt="Right Side Image" data-aos="fade-in-up" data-aos-duration="3000">
+                <img src="images/right-side-img.png" alt="Right Side Image" data-aos="fade-in-up" data-aos-duration="1500">
             </div>
         </div>
     </center>   
@@ -127,8 +127,11 @@
     </div>
 
     <!-- Spinning Image -->
-    <div class="spinning-container">
-        <img src="images/rotatingImg.png" alt="Spinning Image">
+    <div class="banner-container">
+        <img src="images/ban-img.png" alt="Banner Image">
+        <div class="spinning-container">
+            <img src="images/round-img.png" alt="Spinning Image">
+        </div>
     </div>
 
     <!-- Heading Below Spinning Image -->
@@ -141,22 +144,23 @@
     </div>
 </div> 
 </center>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<center>
+    <div class="content-container">
+        <h1>The Heritage Building</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+        <img src="https://via.placeholder.com/400x250" alt="Heritage Building">
+    </div>
+</center>
 <!-- Menus will work without this javascript file. It is used only for extra
      effects, improved usability, compatibility with very old web browsers
      and support for touch screen devices. -->
 <script type="text/javascript" src="menu_files/mbjsmbmcp.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-    $(document).on('ready', function () {
-      // initialization of aos
-      AOS.init({
-        duration: 3000,
-      });
-    });
-  </script>
-<script>    
+    AOS.init({
+        duration: 1600,
+    })
+    
     window.addEventListener("scroll", function() {
         let logo = document.getElementById("logo");
 
@@ -166,6 +170,12 @@
             logo.classList.remove("scrolled-logo"); // Restore original
         }
     });
-</script>
+    document.addEventListener("DOMContentLoaded", function() {
+        AOS.init({
+            once: true, // Ensures animation runs once and stays visible
+            duration: 1000, // Adjust animation speed
+        });
+    });
+    </script>
 </body>
 </html>
