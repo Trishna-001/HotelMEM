@@ -19,8 +19,9 @@ body {
     display: flex;
     justify-content: space-between; /* Distributes menu items & logo */
     align-items: center; /* Centers items vertically */
-    width: 100%;
+    /* width: 100%; */
     padding: 10px 20px;
+    background: #3b3328;
 }
 
 /* Style for the menu items */
@@ -191,6 +192,7 @@ h2.heading-title , h1.heading-title-2.aos-init.aos-animate {
     letter-spacing: 0.5px;
     word-spacing: 0px;
     transition: transform 0.2s ease, background 0.3s ease;
+    margin-bottom: 15px;
 }
 
 /* Shrink animation on hover */
@@ -260,10 +262,11 @@ h2.heading-title , h1.heading-title-2.aos-init.aos-animate {
 }
 
 #right-side-img{
-    position: relative;
-    top: 104px;
-    right: -507px;
+    position: absolute;
     width: 200px;
+    z-index: 1;
+    right: 0;
+    top: 600px;
 }
 #right-side-img img{
     width: 100%;
@@ -330,6 +333,9 @@ h2.heading-title , h1.heading-title-2.aos-init.aos-animate {
 
 .right button:hover {
     background-color: #453a30;
+}
+#mobile-logo,#mobile-logo-outer{
+    display: none;
 }
 
 /* Fade-in animations */
@@ -540,5 +546,62 @@ h1.heading-below{
         width: 80%;
         margin: 10px 0;
     }
+    #right-side-img {
+        display: none;
+    }
+    #mobile-logo{
+        display: block;
+    }
+    #mobile-logo img{
+        width: 100px;
+    }
+    div#logo{
+        display: none !important;
+    }
+    #menu {
+        display: flex;
+        justify-content: space-between; /* Push logo left and menu right */
+        align-items: center; /* Align items vertically */
+        padding: 10px;
+    }
+    #mobile-logo-outer {
+        display: inline-flex;
+        flex: 1; /* Allow logo to take space */
+    }
+
+    #mobile-logo-outer img {
+        height: 80px; /* Adjust as needed */
+    }
+
+    #mbmcpebul_wrapper {
+        flex: 0; /* Prevent from stretching */
+    }
+
+    .hamburger_button {
+        cursor: pointer;
+        font-size: 24px;
+    }
+    #menu-1 {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the left */
+        text-align: left;
+    }
+
+    .menu-items {
+        display: flex;
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: flex-start; /* Align to the left */
+        width: 100%; /* Make sure it takes full width */
+        padding-left: 0;
+        list-style: none;
+        gap: 0px; /* Add spacing */
+    }
+
+    .menu-items li {
+        display: block;
+        width: 100%;
+    }
+    
 }
 
