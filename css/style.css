@@ -420,7 +420,7 @@ h1.heading-below{
     justify-content: center; /* Center images horizontally */
     align-items: center; /* Align images vertically */
     gap: 20px; /* Space between images */
-    margin: 50px 50px;
+    margin: 50px 50px 0px 50px;
 }
 
 .image-row img {
@@ -492,12 +492,98 @@ h1.heading-below{
 
 .content-container img {
     width: 100%; /* Make image responsive */
-    max-width: 400px; /* Adjust size */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
 
+.container-1 {
+    background-color: #3b3328;
+    color: white;
+    padding: 40px;
+    width: 100%;
+    overflow: hidden;
+}
+h2 {
+    margin-bottom: 20px;
+}
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.content {
+    flex: 1;
+    padding: 20px;
+    opacity: 0;
+}
+.content-left {
+    transform: translateX(-100%);
+    animation: slideLeft 1s forwards;
+}
+.content-middle {
+    transform: translateY(100%);
+    animation: slideUp 1s forwards 0.5s;
+}
+.content-right {
+    transform: translateX(100%);
+    animation: slideRight 1s forwards 1s;
+}
+@keyframes slideLeft {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideRight {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* Footer Styles */
+.footer {
+    background-color: #d8cec2;
+    color: #3b3328;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.footer-logo img {
+    max-width: 100px;
+}
+.footer-contact {
+    text-align: left;
+}
+.footer-contact p {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer-contact i {
+    font-size: 1.2em;
+}
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-menu ul li {
+    margin: 5px 0;
+}
+.footer-menu ul li a {
+    text-decoration: none;
+    color: #3b3328;
+    font-weight: bold;
+}
 
 
 
